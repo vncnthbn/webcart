@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="dessignnmoto.css">
+    <ul class="slideuptabs blue">
+    <li><a href="proj.htm"><span>Home</span></a></li>
+    <li><a href="prods.htm"><span>Products</span></a></li>
+    <li><a href="store.htm"><span>Store</span></a></li>
+    <li><a href=""><span>Cart</span></a></li>
+    <li><a href="gallery.htm"><span>Gallery</span></a></li>
+    <li><a href="news.html"><span>News</span></a></li>   
+    <li><a href="faq.html"><span>Faqs</span></a></li>
+    <li><a href="aboutus.htm"><span>About Us</span></a></li>
+
+</ul>
+</head>
+
+    <!-- Images sourced from Wikimedia Commons http://commons.wikimedia.org/wiki/Main_page -->
+<form >
+<div class="imageGrid">
+  <div class="tile"  style="background-image: url('Palit.jpg');">
+    <div class="textWrapper"><h2>php 20,499.00</h2>
+      <div class="content"> Palit GeForce GTX 1070 Ti Dual 8GB GDDR5 256bit Graphics/Video Card</div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <label  id="itm1" for="Palit Gtx">Palit GTX</label>
+      <br>
+      <br>
+      <br>
+      Items <input type="number"  id="product1" min="1" max="5" >
+    </div>
+  </div><!--
+--><div class="tile" style="background-image: url('colorful.jpg'); ">
+  <div class="textWrapper"><h2>php 10,962.00</h2>
+    <div class="content">Colorful NVIDIA GeForce GTX iGame 1050Ti GPU 4GB 128bit Gaming </div>
+      <br>
+      <br>
+      <br>
+      <br>
+       <label  id="itm2" for="Colorful NVIDIA">GTX IGame</label>
+      <br>
+      <br>
+      <br>
+      <input type="number"  id="product2" min="1" max="5" >
+  </div>
+  </div><!--
+--><div class="tile" style="background-image: url('vcard1.jpg');">
+  <div class="textWrapper"><h2>php 8,074.00</h2>
+    <div class="content">OH WISENOVO GTX750Ti 4G GDDR5 Gaming Video Graphics Card with Two Cooling Fan</div>
+      <br>
+      <br>
+      <br>
+      <br>
+       <label  id="itm3" for="WISENOVO GTX750Ti 4G">GTX750Ti</label>
+      <br>
+      <br>
+      <br>
+     items <input type="number"  id="product3" min="1" max="5" >
+  </div>
+  </div><!--
+--><div class="tile" style="background-image: url('vcard2.jpg');">
+  <div class="textWrapper"><h2>php 8,399.00</h2>
+    <div class="content">Sapphire Radeon PULSE RX 550 4GB GDDR5 HDMI / DVI-D / DP (UEFI) PCI-E Video/Graphics Card (SPR-11268-01-20G)Palit GeForce GTX 1070 Ti Dual 8GB GDDR5 256bit Graphics/Video Card</div>
+      <br>
+      <br>
+      <br>
+      <br>
+       <label  id="itm4" for="Sapphire Radeon PULSE RX 550">GTX 1070 Ti</label>
+      <br>
+      <br>
+      <br>
+      items<input type="number"  id="product4" min="1" max="5" >
+  </div>
+  </div><!--
+--><div class="tile" style="background-image: url('vcard3.jpg');">
+  <div class="textWrapper"><h2>php 3,488.00</h2>
+    <div class="content">Palit GT 730 2GB 64bit GDDR3 Graphics/Video Card</div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <label  id="itm5" for="PPalit GT 730">GT 730 </label> 
+      <br>
+      <br>
+      <br>
+      items<input type="number"  id="product5" min="1" max="5" >
+  </div>
+  </div><!--
+--><div class="tile" style="background-image: url('vcard4.jpg');">
+  <div class="textWrapper"><h2>php 2,259.00</h2>
+    <div class="content"> NVIDIA GeForce 4GB GT730 GDDR5 128Bit Express Game Video Card Graphics New - intl</div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <label  id="itm6" for="NVIDIA GeForce 4GB "">GT730 </label>
+      <br>
+      <br>
+      <br>
+      items <input type="number"  id="product6" min="1" max="5" >
+  </div>
+  </div>
+  
+  
+  
+</div>
+
+
+  <input type="button" onclick="calc()" value="Submit"> <input type="reset" name="reset">
+
+</form>
+<table>
+ <th>Description</th>
+      <th>Quantity</th>
+      <th>Rate</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="des1"></td>
+      <td id="quan1"></td>
+      <td id="rate1"></td>
+      <td id="amt1"></td>
+    </tr>
+
+    <tr>
+      <td id="des2"></td>
+      <td id="quan2"> </td>
+      <td id="rate2"></td>
+      <td id="amt2"></td>
+    </tr>
+    <tr>
+      <td id="des3"></td>
+      <td id="quan3"> </td>
+      <td id="rate3"></td>
+      <td id="amt3"></td>
+    </tr>
+    <tr>
+      <td id="des4"></td>
+      <td id="quan4"> </td>
+      <td id="rate4"></td>
+      <td id="amt4"></td>
+    </tr>
+    <tr>
+      <td id="des5"></td>
+      <td id="quan5"> </td>
+      <td id="rate5"></td>
+      <td id="amt5"></td>
+    </tr>
+    <tr>
+      <td id="des6"></td>
+      <td id="quan6"> </td>
+      <td id="rate6"></td>
+      <td id="amt6"></td>
+    </tr>
+
+
+    <tr>
+    <td id=""></td>
+    <td id="totalValue">Total value</td>
+    <td id=""></td>
+    <td id="totalss"></td>
+    </tr>
+    </table>
+</body>
+
+<script type="text/javascript">
+    
+        function calc(){
+
+    
+            var itm1 = document.getElementById("itm1").textContent
+            var itm2 = document.getElementById("itm2").textContent
+            var itm3 = document.getElementById("itm3").textContent
+            var itm4 = document.getElementById("itm4").textContent
+            var itm5 = document.getElementById("itm5").textContent
+            var itm6 = document.getElementById("itm6").textContent
+
+            var product1 = document.getElementById("product1").value;
+            var product2 = document.getElementById("product2").value;
+            var product3 = document.getElementById("product3").value;
+            var product4 = document.getElementById("product4").value;
+            var product5 = document.getElementById("product5").value;
+            var product6 = document.getElementById("product6").value;
+
+            var total1;
+            var total2;
+            var total3;
+            var total4;
+            var total5;
+            var total6;
+            var fullTotal;
+
+            var rate =100;
+            var rATES1 =20499;
+            var rATES2 =10962;
+            var rATES3 =8074;
+            var rATES4 =8399;
+            var rATES5 =3488;
+            var rATES6 = 2259;
+            total1 = product1 * rATES1;
+            total2 = product2 * rATES2;
+            total3 = product3 * rATES3;
+            total4 = product4 * rATES4;
+            total5 = product5 * rATES5;
+            total6 = product6 * rATES6;
+
+var fullTotal = total1+total2+total3+total4+total5+total6;
+
+            var totals11 =document.getElementById('totalss');
+            var des1s = document.getElementById('des1');
+            var quan1s =document.getElementById('quan1');
+            var rate1s = document.getElementById('rate1');
+            var amt1s =document.getElementById('amt1');
+
+            totals11.innerHTML=fullTotal
+
+            des1s.innerHTML =itm1
+            quan1s.innerHTML= product1
+            rate1s.innerHTML=rATES1
+            amt1s.innerHTML=total1
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+/* 2*/
+
+            var des2s = document.getElementById('des2');
+            des2s.innerHTML =itm2
+
+            var quan2s =document.getElementById('quan2');
+            quan2s.innerHTML= product2
+
+            var rate2s = document.getElementById('rate2');
+            rate2s.innerHTML=rATES2
+
+            var amt2s =document.getElementById('amt2');
+            amt2s.innerHTML=total2
+
+
+/* 3*/
+
+            var des3s = document.getElementById('des3');
+            des3s.innerHTML =itm3
+
+            var quan3s =document.getElementById('quan3');
+            quan3s.innerHTML= product3
+
+            var rate3s = document.getElementById('rate3');
+            rate3s.innerHTML=rATES3
+
+            var amt3s =document.getElementById('amt3');
+            amt3s.innerHTML=total3
+
+/* 4*/
+
+            var des4s = document.getElementById('des4');
+            des4s.innerHTML =itm4
+
+            var quan4s =document.getElementById('quan4');
+            quan4s.innerHTML= product4
+
+            var rate4s = document.getElementById('rate4');
+            rate4s.innerHTML=rATES4
+
+            var amt4s =document.getElementById('amt4');
+            amt4s.innerHTML=total4
+
+/* 5*/
+
+            var des5s = document.getElementById('des5');
+            des5s.innerHTML =itm5
+
+            var quan5s =document.getElementById('quan5');
+            quan5s.innerHTML= product5
+
+            var rate5s = document.getElementById('rate5');
+            rate5s.innerHTML=rATES5
+
+            var amt5s =document.getElementById('amt5');
+            amt5s.innerHTML=total5
+
+/* 6*/
+            var des6s = document.getElementById('des6');
+            des6s.innerHTML =itm6
+
+            var quan6s =document.getElementById('quan6');
+            quan6s.innerHTML= product6
+
+            var rate6s = document.getElementById('rate6');
+            rate6s.innerHTML=rATES6
+
+            var amt6s =document.getElementById('amt6');
+            amt6s.innerHTML=total6
+        
+
+
+
+        }
+</script>
+</html>

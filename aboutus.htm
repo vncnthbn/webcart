@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<ul class="slideuptabs blue">
+	<li><a href="proj.htm"><span>Home</span></a></li>
+	<li><a href="prods.htm"><span>Products</span></a></li>
+	<li><a href="store.htm"><span>Store</span></a></li>
+	<li><a href="cart.htm"><span>Cart</span></a></li>
+	<li><a href="gallery.htm"><span>Gallery</span></a></li>
+	<li><a href="news.html"><span>News</span></a></li>	
+	<li><a href="faq.html"><span>Faqs</span></a></li>
+	<li><a href="aboutus.htm"><span>About Us</span></a></li>
+
+</ul>
+</head>
+
+
+<body>
+<br>
+<br>
+<br>
+<center>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/vin.jpg" alt="vincent" style="width:70%">
+      <div class="container">
+        <h2>Vincent Jose C. Habon</h2>
+        <p class="title">Backend Devepeloper</p>
+        <p>Creates Logigal Function in the web</p>
+        <p>Debuger & Tester</p>
+        <p><button class="button">vincent@gmail.com</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/kel.jpg" alt="Kel" style="width:70%">
+      <div class="container">
+        <h2>John Kelvin V. Hapa</h2>
+        <p class="title">Frontend Developer</p>
+        <p>Designer the Web</p>
+        <p>Lead Programmer</p>
+        <p><button class="button">kelvin@gmail.com</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="images/hans.jpg" alt="John" style="width:70%">
+      <div class="container">
+        <h2>Aylmer Hans Emil E. Mercado</h2>
+        <p class="title">Project Manager</p>
+        <p>Discusses the flow of the system </p>
+        <p>System analyzer</p>
+        <p><button class="button">almer@gmail.com</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</center>
+
+<div class="dd">
+<h1>About Bench Mark</h1>
+<p class="para">AlJoJo is a an ordering system that deals to sell products online , the system manages to make an easier way of selling hardware computer products, and also to help the user find and inquire with no hastle , it will just be need a suitable internet connection for surfing and browing the system</a> </p>
+
+<h1>To be Publish</h1>
+<p class="para">Dated create octuber 23 2018, with the help of the team the system published</a> </p>
+<h1>Alright Reseved</h1>
+</div >
+</body>
+<style>
+.dd{
+    border: 1px solid gray;
+    padding: 8px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #38a2ad;
+}
+
+.para{
+    text-indent: 50px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+ {
+    text-decoration: none;
+    color: #008CBA;
+}
+
+
+
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 70%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 10px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 70%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+
+
+
+ul.slideuptabs{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-align: left; /* change to "center" or "right" to align differently */
+	border-bottom: 10px solid green; /* bottom border */
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #d8d8d8 100%); /* gray gradient background */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d8d8d8));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#d8d8d8 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#d8d8d8 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#d8d8d8 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#d8d8d8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d8d8d8',GradientType=0 );
+}
+
+
+ul.slideuptabs li{
+ display: inline;
+}
+
+ul.slideuptabs li:first-of-type{
+	margin-left: 10px;
+}
+
+ul.slideuptabs a{
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	color: black; /* font color */
+	text-decoration: none;
+	padding: 20px 55px;
+	font-size: 14px; /* font size */
+	font-weight: bold;
+	vertical-align: bottom;
+	-webkit-transition: color 0.5s; /* transition property and duration */
+	-moz-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+ul.slideuptabs a span{
+	position: relative;
+	z-index: 10;
+}
+
+ul.slideuptabs a::before{
+	content: '';
+	color: white;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: green; /* tab background */
+	left: 0;
+	top: 110%; /* extra 10% is to account for shadow dimension */
+	box-shadow: -2px 2px 10px rgba(255,255,255,.5) inset;
+	border-radius: 15px 15px 0 0 / 12px 12px; /* oval shaped border for top-left and top-right corners */
+	-webkit-transition: top 0.5s; /* transition property and duration */
+	-moz-transition: top 0.5s;
+	transition: top 0.5s;
+}
+
+ul.slideuptabs a:hover{
+	color: white; /* hover color */
+}
+
+ul.slideuptabs a:hover::before{
+	top: 0; /* slide tab up */
+}
+
+/****** Responsive Code ******/
+
+@media screen and (max-width: 640px) {
+	
+	ul.slideuptabs li:first-of-type{
+		margin-left: 0;
+	}
+}
+
+
+
+/****** Theme Blue ******/
+
+ul.slideuptabs.blue{
+	border-bottom-color: #259AD1;
+}
+
+ul.slideuptabs.blue a::before{
+	background: #259AD1;
+}
+.mySlides {display:none;
+width:800px;
+height:400px;
+}
+
+
+</style>
+</html>

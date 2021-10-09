@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AYLJOJO COMPUTER PARTS</title>
+<link href="dessignnmoto.css" rel="stylesheet">
+<ul class="slideuptabs blue">
+	<li><a href="proj.htm"><span>Home</span></a></li>
+	<li><a href="prods.htm"><span>Products</span></a></li>
+	<li><a href="store.htm"><span>Store</span></a></li>
+	<li><a href="cart.htm"><span>Cart</span></a></li>
+	<li><a href="gallery.htm"><span>Gallery</span></a></li>
+	<li><a href="news.htm"><span>News</span></a></li>	
+	<li><a href="faq.html"><span>Faqs</span></a></li>
+	<li><a href="aboutus.htm"><span>About Us</span></a></li>
+
+</ul>
+</head>
+<style>
+
+
+.mySlides {display:none;
+width:800px;
+height:400px;
+}
+.mySlides{
+	width:100% ;height:100%;
+}
+
+
+
+
+
+div.gallery img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    outline-width: medium;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 32.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 100%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+</style>
+
+<body>
+
+
+<center>
+<div class="aaa">
+    <a target="_blank" href="display1.png">
+  <img class="mySlides" src="display1.png">
+  </a>
+      <a target="_blank" href="display2.png">
+  <img class="mySlides" src="display2.png" >
+  </a>
+      <a target="_blank" href="display3.png">
+  <img class="mySlides" src="display3.png">
+ </a>
+</div>
+</center>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="ind1.png">
+      <img src="ind1.png" alt="paka_angas1" width="600" height="400">
+    </a>
+    <div class="desc">Buy this product its limmitted and discounted</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="ind2.png">
+      <img src="ind2.png" alt="paka_angas1" width="600" height="400">
+    </a>
+    <div class="desc">Sale! Sale! Sale! Sale!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="ind3.png">
+      <img src="ind3.png" alt="paka_angas3" width="600" height="400">
+    </a>
+    <div class="desc">Buy 1 Take 1 and more Promo</div>
+  </div>
+</div>
+<div>
+ <a target="" href="rog.htm">
+<img src="display4.png">
+</a>
+</div>
+</body>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+</script>
+
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ <script>  </script>
+ <script type="text/javascript">
+ var name;
+var addres;
+var postal;
+var contact;
+ name.value;
+ 	function calc(){
+
+
+name = prompt("enter your name...");
+addres = prompt("enter your addres...");
+postal = prompt("enter your postal code...");
+contact = prompt("enter your contact number...");
+
+ 		var itm2 = document.getElementById("itm2").textContent
+ 		var shipfees = document.getElementById("shipfees").textContent
+ 		var product2 = document.getElementById("product2").value;
+ 		var total2;
+ 		var rATES2 =8074;
+ 		var shippingfee=10000;
+ 		total2 = product2 * rATES2;
+ 		totalpayment=total2+shippingfee;
+
+ 		var des2s = document.getElementById('des2');
+			des2s.innerHTML =itm2
+
+			var quan2s =document.getElementById('quan2');
+			quan2s.innerHTML= product2
+
+			var rate2s = document.getElementById('rate2');
+			rate2s.innerHTML=rATES2
+
+			var amt2s =document.getElementById('amt2');
+			amt2s.innerHTML=total2
+
+			var ships = document.getElementById('ship');
+			ships.innerHTML =shipfees
+
+			var tots=document.getElementById('totalall');
+			tots.innerHTML=totalpayment
+
+
+ var names=document.getElementById('name1');
+			names.innerHTML=name
+addres.value;
+var adds=document.getElementById('add');
+			adds.innerHTML=addres
+postal.value;
+var pos=document.getElementById('post');
+			pos.innerHTML=postal
+contact.value;
+var tac=document.getElementById('con');
+			con.innerHTML=contact
+
+		
+ 	}
+ 		function order()
+			{
+if (addres== null) {
+    				alert('select product First!');
+				window.location = 'prod1.htm';// user pressed OK, but the input field was empty
+} else  {
+    				alert('Please Wait 3 Days, Your Package will be deliver at '+addres);
+				window.location = 'proj.htm';// user typed something and hit OK
+} 
+
+			}
+ </script>
+<link rel="stylesheet" type="text/css" href="dessignnmoto.css">
+<title>Products</title>
+</head>
+<body>
+<table align="right" width="400">
+  <tr>
+    <th>Info</th>
+    <th>#</th>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td id="name1">Not inputed</td>
+  </tr>
+  <tr>
+    <td>Address</td>
+    <td id="add"></td>
+  </tr>
+   <tr>
+    <td>Postal</td>
+    <td id="post">Not inputed</td>
+  </tr>
+   <tr>
+    <td>Contact</td>
+    <td id="con">Not inputed</td>
+  </tr>
+    <tr>
+    <th>Product</th>
+    
+  </tr>
+     <tr>
+    <td>Description</td>
+    <td id="des2">No Value</td>
+  </tr>
+     <tr>
+    <td>Quantity</td>
+    <td id="quan2">No Value</td>
+  </tr>
+   <tr>
+    <td>Price</td>
+    <td id="rate2">No Value</td>
+  </tr>
+   <tr>
+    <td>Net Total</td>
+    <td id="amt2">No Value</td>
+  </tr>
+      <td>Shipping Fee</td>
+    <td id="ship">No Value</td>
+  </tr>
+      <td> Total Payment</td>
+    <td id="totalall">Not Computed</td>
+  </tr>
+  <th><button class="button" onclick="order()" style="vertical-align:middle"><span>Order</span></button></th>
+    
+  </tr>
+</table>
+<h2>Get it now!</h2>
+<h3>CASH ON DeLIVERY ONLY</h3>
+<picture>
+<div>
+<img src="vcard1.jpg" alt="5Terre" width="350px" height="250px" >
+</picture>
+       
+<h1><label  id="itm2" for="Colorful NVIDIA">GTX IGame</label></h1>
+
+<p>4G GDDR5 Graphics Card  Two Cooling Fan</p>
+<h3>Price: php 8,074.00</h3>
+<label  id="shipfees" for="malupit toh">10000 php</label><h5>For Nation Wide Shiping Fee</h5>
+<details>
+  <summary>Manufactured at IBM</summary>
+  <p>this quality product is high intensity</p>
+  <p>All right resered</p>
+</details>
+
+<p><b>Note:</b> This is only limmited</p>
+<h4>ITEMS <input type="number" id="product2" value="0" min="0" max="100"/><br><div id="inc-button" ></h4>
+<br><button class="button" onclick="calc()" style="vertical-align:middle"><span>Buy</span></button>
+</div>
+</body>
+</html>
